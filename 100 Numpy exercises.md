@@ -1,7 +1,7 @@
 
 # 100 numpy exercises
 
-This is a collection of exercises that have been collected in the numpy mailing list, on stack overflow and in the numpy documentation. The goal of this collection is to offer a quick reference for both old and new users but also to provide a set of exercices for those who teach.
+This is a collection of exercises that have been collected in the numpy mailing list, on stack overflow and in the numpy documentation. The goal of this collection is to offer a quick reference for both old and new users but also to provide a set of exercises for those who teach.
 
 
 If you find an error or think you've a better way to solve some of them, feel free to open an issue at <https://github.com/rougier/numpy-100>
@@ -369,7 +369,7 @@ print(Z)
 
 
 ```python
-Z = np.linspace(0,1,12,endpoint=True)[1:-1]
+Z = np.linspace(0,1,11,endpoint=False)[1:]
 print(Z)
 ```
 
@@ -527,8 +527,8 @@ print(D)
 
 
 ```python
-Z = np.arange(10, dtype=np.int32)
-Z = Z.astype(np.float32, copy=False)
+Z = np.arange(10, dtype=np.float32)
+Z = Z.astype(np.int32, copy=False)
 print(Z)
 ```
 
